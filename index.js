@@ -69,14 +69,15 @@ var newImg2 = "images/dice"+diceRoll2+".png";
 document.querySelector(".img2").setAttribute("src",newImg2);  
 
 //print result based on if condition
-if ( diceRoll === diceRoll2)
-{
-    document.querySelector("h1").textContent="Its a Draw";
+if ( diceRoll > diceRoll2)
+{   
+    document.querySelector("h3").textContent="🎉Player 1 is the Winner";
+    
 }
 else if(diceRoll < diceRoll2){
-    document.querySelector("h1").textContent ="Player 2 is the Winner";
+    document.querySelector("h3").textContent ="Player 2 is the Winner🎉";
 }
 else
 {
-    document.querySelector("h1").textContent="Player 1 is the Winner";
+    document.querySelector("h3").textContent="Its a Draw✌"; 
 }
