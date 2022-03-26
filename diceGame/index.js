@@ -57,14 +57,18 @@ else
 }
 */
 
+
+//Player 1 diceRoll
 var diceRoll = Math.floor(Math.random()*6)+1;
 var newImg = "images/dice"+diceRoll+".png";
 document.querySelector(".img1").setAttribute("src", newImg);   
 
+//Player 2 diceRoll
 var diceRoll2 = Math.floor(Math.random()*6)+1;
 var newImg2 = "images/dice"+diceRoll2+".png";
 document.querySelector(".img2").setAttribute("src",newImg2);  
 
+//print result based on if condition
 if ( diceRoll === diceRoll2)
 {
     document.querySelector("h1").textContent="Its a Draw";
